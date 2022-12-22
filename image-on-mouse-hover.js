@@ -5,6 +5,8 @@ texts.forEach((text, i) => {
   text.addEventListener("mouseover", (event) => {
     // Show the corresponding image
     images[i].style.opacity = 1;
+    // images[i].style.top = "-20%";
+    // images[i].style.left = 0;
   });
 
   text.addEventListener("mouseout", (event) => {
@@ -12,7 +14,7 @@ texts.forEach((text, i) => {
     images[i].style.opacity = 0;
   });
 
-  text.addEventListener("mousemove", (event) => {
+  window.addEventListener("mousemove", (event) => {
     // Update the position of the image as the mouse moves
 
     images[i].style.transform = `translate(${event.pageX - 50}px, ${

@@ -13,7 +13,8 @@ div {
 .image {
   position: absolute;
   transform: translate(0, 0);
-  transition: opacity 0.1s ease-in-out, transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.1s ease-in-out,
+    transform cubic-bezier(0.42, 0.63, 0.42, 1.08) 0.2s;
 
   opacity: 0;
 

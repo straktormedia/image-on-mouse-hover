@@ -15,7 +15,7 @@ texts.forEach((text, i) => {
   text.addEventListener("mousemove", (event) => {
     // Update the position of the image as the mouse moves
 
-    images[i].style.transform = `translate(${event.pageX + 10}px, ${
+    images[i].style.transform = `translate(${event.pageX - 50}px, ${
       event.pageY - 50
     }px)`;
 
